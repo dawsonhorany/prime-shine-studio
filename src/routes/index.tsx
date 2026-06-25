@@ -56,16 +56,34 @@ Who owns the inbox this should go to — you, Brooks, or Landon?
 for now i want it to come to me, so i can see that it runs smoothley
 
 
-Thought process
-Thought process
-Got it — all submissions to daxhorany@gmail.com for now.
-
-Question 3: The Lovable credits situation — how do you want to handle edits?
-
-Since you're out of credits, you have two paths:
-
-Option A: Edit the code directly — Lovable lets you export or connect to GitHub. We pull the code, I make the form changes here in Cowork, you push it back or host it elsewhere (Netlify/Vercel, free). This is the real workaround.
-Option B: Wait for credits to reset — Lovable free credits reset daily. If you're just short-term blocked, we plan everything now, you execute tomorrow.
+const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSubmitting(true);
+    const form = e.target as HTMLFormElement;
+    try {
+      const res = await fetch("https://formspree.io/f/mrewprvw", {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      });
+      if (res.ok) {
+        form.reset();
+        toast.success("Quote request received", {
+          description: "Brooks or Landon will reach out within 24 hours.",
+        });
+      } else {
+        toast.error("Something went wrong", {
+          description: "Please try again or call us directly.",
+        });
+      }
+    } catch {
+      toast.error("Something went wrong", {
+        description: "Please try again or call us directly.",
+      });
+    } finally {
+      setSubmitting(false);
+    }
+  };
 Option C: Use a third-party form service — Drop in a Formspree or Tally.so form via a simple URL swap. No code editing needed, just replace the form action URL — can sometimes be done without touching Lovable at all.
 (My recommendation: Option A or C. A gives you full control forever. C is the fastest — Formspree has a free tier, takes 5 minutes, and I can walk you through it without needing to touch Lovable's editor at all.)
 
