@@ -30,26 +30,26 @@ const services = [
   {
     n: "01",
     title: "Deep Interior",
-    desc: "Steam extraction, leather nourishment, and surgical crevice cleaning. Factory-fresh atmosphere.",
-    bullets: ["pH-neutral cleansing", "UV protection layer"],
+    desc: "A thorough vacuum, wipe-down, and conditioning of all surfaces — seats, dash, and panels — leaving your interior clean, fresh, and like new.",
+    bullets: [],
   },
   {
     n: "02",
-    title: "Paint Correction",
-    desc: "Multi-stage machine polishing to eliminate swirls and restore depth to your clear coat.",
-    bullets: ["Clay bar decon", "Mirror-finish buff"],
+    title: "Complete Extrior",
+    desc: "A complete hand wash, wheel cleaning, glass polish, and protective wax to leave your car's exterior clean, smooth, and glossy.",
+    bullets: [],
   },
   {
     n: "03",
-    title: "Ceramic Shield",
-    desc: "Ultra-hydrophobic protection that beads water and repels road grime for years, not weeks.",
-    bullets: ["9H hardness rated", "Nano-tech bonding"],
+    title: "Tire wash",
+    desc: "A deep clean for your tires and wheels, lifting brake dust, grime, and road buildup, then finished with a protective dressing for a clean, rich shine.\n\n\ue056\n\ue03b\n\ue0c1\n\ue0fb\n\ue0f9\n\ue11d",
+    bullets: [],
   },
   {
     n: "04",
     title: "The Prime Full",
     desc: "The ultimate reset. Every square inch addressed, protected, and perfected.",
-    bullets: ["Concours standard", "Complete overhaul"],
+    bullets: [],
   },
 ];
 
@@ -113,8 +113,7 @@ function Index() {
             Reflecting <span className="text-prime-accent">Perfection</span> in Every Surface.
           </h1>
           <p className="max-w-xl text-prime-muted text-base md:text-lg mb-8 leading-relaxed">
-            Elite automotive preservation by Brooks Bryan & Landon Howald. Hydrophobic coatings and
-            surgical-grade detailing for those who refuse to drive anything less than flawless.
+            Lite Automotive Preservation by Brooks Bryan & Landon Howald — we use water-repelling coatings and careful, hands-on detailing to keep your car looking clean, smooth, and shiny, made for drivers who want nothing less than perfect.
           </p>
           <a
             href="#quote"
@@ -144,11 +143,13 @@ function Index() {
               <span className="font-mono text-xs text-prime-accent mb-6 block">{s.n}</span>
               <h3 className="text-2xl font-display italic mb-4">{s.title}</h3>
               <p className="text-prime-muted text-sm leading-relaxed mb-8">{s.desc}</p>
-              <ul className="text-[10px] font-mono uppercase tracking-wider text-prime-muted space-y-2">
-                {s.bullets.map((b) => (
-                  <li key={b}>• {b}</li>
-                ))}
-              </ul>
+              {s.bullets.length > 0 && (
+                <ul className="text-[10px] font-mono uppercase tracking-wider text-prime-muted space-y-2">
+                  {s.bullets.map((b) => (
+                    <li key={b}>• {b}</li>
+                  ))}
+                </ul>
+              )}
             </div>
           ))}
         </div>
@@ -193,7 +194,7 @@ function Index() {
                 >
                   <option className="bg-prime-bg">The Prime Full</option>
                   <option className="bg-prime-bg">Ceramic Shield</option>
-                  <option className="bg-prime-bg">Paint Correction</option>
+                  <option className="bg-prime-bg">Complete Extrior</option>
                   <option className="bg-prime-bg">Deep Interior</option>
                 </select>
               </div>
@@ -252,8 +253,8 @@ function Index() {
             </a>
           </div>
 
-          <FounderCard initials="BB" name="Brooks Bryan" role="Correction Specialist" />
-          <FounderCard initials="LH" name="Landon Howald" role="Coating Technician" />
+          <FounderCard initials="BB" name="Brooks Bryan" role="ARGYLE, TX" />
+          <FounderCard initials="LH" name="Landon Howald" role="ARGYLE, TX" />
         </div>
       </section>
 
