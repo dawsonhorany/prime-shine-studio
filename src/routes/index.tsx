@@ -251,8 +251,8 @@ function Index() {
             </a>
           </div>
 
-          <FounderCard initials="BB" name="Brooks Bryan" role="Correction Specialist" />
-          <FounderCard initials="LH" name="Landon Howald" role="Coating Technician" />
+          <FounderCard initials="BB" name="Brooks Bryan" role="ARGYLE, TX" />
+          <FounderCard initials="LH" name="Landon Howald" role="ARGYLE, TX" />
         </div>
       </section>
 
