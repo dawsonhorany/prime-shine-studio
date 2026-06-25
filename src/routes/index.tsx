@@ -35,7 +35,7 @@ const services = [
   },
   {
     n: "02",
-    title: "Complete Extrior",
+    title: "Complete Exterior",
     desc: "A complete hand wash, wheel cleaning, glass polish, and protective wax to leave your car's exterior clean, smooth, and glossy.",
     bullets: [],
   },
@@ -194,7 +194,7 @@ function Index() {
                 >
                   <option className="bg-prime-bg">The Prime Full</option>
                   <option className="bg-prime-bg">Ceramic Shield</option>
-                  <option className="bg-prime-bg">Complete Extrior</option>
+                  <option className="bg-prime-bg">Complete Exterior</option>
                   <option className="bg-prime-bg">Deep Interior</option>
                 </select>
               </div>
