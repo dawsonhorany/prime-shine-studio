@@ -35,7 +35,7 @@ const services = [
   },
   {
     n: "02",
-    title: "Paint Correction",
+    title: "Complete Extrior",
     desc: "A complete hand wash, wheel cleaning, glass polish, and protective wax to leave your car's exterior clean, smooth, and glossy.",
     bullets: [],
   },
