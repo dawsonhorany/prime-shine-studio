@@ -49,7 +49,7 @@ const services = [
     n: "04",
     title: "The Prime Full",
     desc: "The ultimate reset. Every square inch addressed, protected, and perfected.",
-    bullets: ["Concours standard", "Complete overhaul"],
+    bullets: [],
   },
 ];
 
