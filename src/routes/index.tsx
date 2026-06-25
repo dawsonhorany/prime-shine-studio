@@ -41,9 +41,9 @@ const services = [
   },
   {
     n: "03",
-    title: "Ceramic Shield",
-    desc: "Ultra-hydrophobic protection that beads water and repels road grime for years, not weeks.",
-    bullets: ["9H hardness rated", "Nano-tech bonding"],
+    title: "Tire wash",
+    desc: "A deep clean for your tires and wheels, lifting brake dust, grime, and road buildup, then finished with a protective dressing for a clean, rich shine.\n\n\ue056\n\ue03b\n\ue0c1\n\ue0fb\n\ue0f9\n\ue11d",
+    bullets: [],
   },
   {
     n: "04",
