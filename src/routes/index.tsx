@@ -194,7 +194,7 @@ function Index() {
                 >
                   <option className="bg-prime-bg">The Prime Full</option>
                   <option className="bg-prime-bg">Ceramic Shield</option>
-                  <option className="bg-prime-bg">Complete Extrior</option>
+                  <option className="bg-prime-bg">Complete Exterior</option>
                   <option className="bg-prime-bg">Deep Interior</option>
                 </select>
               </div>
