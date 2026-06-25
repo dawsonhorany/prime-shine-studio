@@ -36,8 +36,8 @@ const services = [
   {
     n: "02",
     title: "Paint Correction",
-    desc: "Multi-stage machine polishing to eliminate swirls and restore depth to your clear coat.",
-    bullets: ["Clay bar decon", "Mirror-finish buff"],
+    desc: "A complete hand wash, wheel cleaning, glass polish, and protective wax to leave your car's exterior clean, smooth, and glossy.",
+    bullets: [],
   },
   {
     n: "03",
