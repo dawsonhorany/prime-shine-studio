@@ -30,8 +30,8 @@ const services = [
   {
     n: "01",
     title: "Deep Interior",
-    desc: "Steam extraction, leather nourishment, and surgical crevice cleaning. Factory-fresh atmosphere.",
-    bullets: ["pH-neutral cleansing", "UV protection layer"],
+    desc: "A thorough vacuum, wipe-down, and conditioning of all surfaces — seats, dash, and panels — leaving your interior clean, fresh, and like new.",
+    bullets: [],
   },
   {
     n: "02",
