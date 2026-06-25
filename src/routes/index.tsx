@@ -143,11 +143,13 @@ function Index() {
               <span className="font-mono text-xs text-prime-accent mb-6 block">{s.n}</span>
               <h3 className="text-2xl font-display italic mb-4">{s.title}</h3>
               <p className="text-prime-muted text-sm leading-relaxed mb-8">{s.desc}</p>
-              <ul className="text-[10px] font-mono uppercase tracking-wider text-prime-muted space-y-2">
-                {s.bullets.map((b) => (
-                  <li key={b}>• {b}</li>
-                ))}
-              </ul>
+              {s.bullets.length > 0 && (
+                <ul className="text-[10px] font-mono uppercase tracking-wider text-prime-muted space-y-2">
+                  {s.bullets.map((b) => (
+                    <li key={b}>• {b}</li>
+                  ))}
+                </ul>
+              )}
             </div>
           ))}
         </div>
