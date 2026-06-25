@@ -113,8 +113,7 @@ function Index() {
             Reflecting <span className="text-prime-accent">Perfection</span> in Every Surface.
           </h1>
           <p className="max-w-xl text-prime-muted text-base md:text-lg mb-8 leading-relaxed">
-            Elite automotive preservation by Brooks Bryan & Landon Howald. Hydrophobic coatings and
-            surgical-grade detailing for those who refuse to drive anything less than flawless.
+            Lite Automotive Preservation by Brooks Bryan & Landon Howald — we use water-repelling coatings and careful, hands-on detailing to keep your car looking clean, smooth, and shiny, made for drivers who want nothing less than perfect.
           </p>
           <a
             href="#quote"
