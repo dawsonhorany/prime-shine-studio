@@ -2,7 +2,19 @@
 @source "../src";
 @import "tw-animate-css";
 
+@theme {
+  --color-prime-bg: oklch(0.13 0.01 240);
+  --color-prime-fg: oklch(0.97 0.005 240);
+  --color-prime-muted: oklch(0.97 0.005 240 / 0.6);
+  --color-prime-accent: oklch(0.82 0.16 200);
+  --color-prime-border: oklch(0.97 0.005 240 / 0.12);
+  --font-display: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
 @custom-variant dark (&:is(.dark *));
+
 
 /*
  * Design system definition.
